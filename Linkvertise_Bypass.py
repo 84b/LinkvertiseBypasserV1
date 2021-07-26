@@ -2,6 +2,7 @@ import requests
 import json
 import ctypes
 import os
+import time
 ctypes.windll.kernel32.SetConsoleTitleW("Linkvertise: Ad-Link Bypasser!")
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
@@ -16,5 +17,6 @@ def Main():
         destination = bypass.json()['destination']
         cls()
         print(destination)
+        time.sleep(10)
 if __name__ == '__main__':
     Main()
